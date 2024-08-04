@@ -18,9 +18,11 @@ html, body{
 }
 
 .nav{
-    height: 100px;
-    width: 100%;
+    /*  */
     /* background-color: red; */
+    /* height: 100px; */
+    height: 5vw;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -29,11 +31,12 @@ html, body{
 }
 
 .nav-part2{
-    display: flex;
-
-    align-items: center;
+    /*  */
     /* background-color: blue; */
+    display: flex;
+    align-items: center;
     gap: 4vw;
+    padding: 0 1vw;
 }
 
 .nav h2{
@@ -52,7 +55,8 @@ html, body{
     background-color: #56B690;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 0.2vw;
     font-weight: 600;
 }
 
@@ -64,7 +68,7 @@ html, body{
 
 .content{
     /* IMP  calc(100% space - space 100px) */
-    height: calc(100% - 100px);
+    height: calc(95% - 5vw);
     width: 100%;
 
     display: flex;
@@ -129,6 +133,9 @@ html, body{
 
 .link-footer a{
     text-decoration: none;
+    color: rgb(146, 141, 141);
+    font-size: 1vw;
+    font-weight: 100;
 }
 
 
@@ -144,8 +151,9 @@ html, body{
 
 @media (max-width:600px){
     .nav{
+        background-color: red;
+        height: 10vw;
         padding: 0 5vw;
-        height: 60px;
     }
     .nav h2{
         font-size: 5.1vw;
@@ -167,7 +175,7 @@ html, body{
     }
 
     .content{
-        height: calc(100% - 60px);
+        height: calc(96% - 10vw);
         flex-direction: column;
     }
 
